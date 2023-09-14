@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="Adot-cad-ADM.css">
+    <script src="Adot-cad-ADM.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://font.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!---Logo e Navbar--->
+    <header>
+        <a href="#" class="logo.img">
+            <img src="img/logo.png">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="/Home/Home.html">Home-sair</a></li>
+            <li><a href="/Home/Home.html">Sobre nós-sair</a></li>
+            <li><a href="/Catalogo/catalog.html">QUERO ADOTAR-sair</a></li>
+            <li><a href="/Doar/Doar.html">Ajude a ONG-sair</a></li>
+        </ul>
+    </header>
+
+    <!---funcionarios titulo--->
+    <section class="funcionarios">
+        <div class="center-text" id="funcionarios">
+
+            <div class="new-content">
+                <div class="row">
+                    <h2>Adotantes cadastrados</h2>
+                    <h4>Clique no funcionario para ver mais detalhes</h4>
+
+                    <label for="search">Buscar por cpf:</label>
+                    <input type="text" id="search" placeholder="" oninput="buscarAdotante()">
+
+
+                    <div class="campos">
+                        <form id="employeeForm">
+                            <!-- Formulário para adicionar funcionários -->
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" required>
+
+                            <label for="sexo">Sexo:</label>
+                            <select id="sexo" name="sexo">
+                                <option value="F">F</option>
+                                <option value="M">M</option>
+                            </select>
+
+                            <label for="numero">Numero_resid:</label>
+                            <input type="number" id="numero" required>
+
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" id="complemento" required>
+
+                            <label for="cep">CEP:</label>
+                            <input type="number" id="cep" required>
+
+                            <label for="logradouro">Logradouro:</label>
+                            <input type="text" id="logradouro" required>
+
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" id="bairro" required></br>
+
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" required>
+
+                            <label for="uf">UF:</label>
+                            <input type="text" id="uf" required>
+
+                            <label for="dt">Dt_nasc:</label>
+                            <input type="date" id="dt" required>
+
+                            <label for="tipo">Tipo_residenc:</label>
+                            <input type="text" id="tipo" required>
+
+                            <label for="telefone">Telefone:</label>
+                            <input type="number" id="telefone" required>
+
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" required>
+
+                            <label for="cpf">CPF:</label>
+                            <input type="number" id="cpf" required></br>
+
+                            <label for="trabalha">Trabalha?:</label>
+                            <select id="trabalha" name="trabalha">
+                                <option value="S">S</option>
+                                <option value="N">N</option>
+                            </select>
+
+                            <label for="periodo">Periodo_trab:</label>
+                            <input type="text" id="periodo" required>
+
+                            <label for="usuario">Usuario_id:</label>
+                            <input type="number" id="usuario" required>
+
+
+
+                            <button type="button" id="addButton">Adicionar Funcionário</button><br>
+                        </form>
+                    </div>
+
+                    <!-- Contêiner para exibir funcionários -->
+                    <div class="containerTodos">
+                        <div id="employeeList">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!---Rodapé--->
+     <section class="contact">
+        <div class="contact-box">
+            <h4>INSTITUCIONAL</h4>
+            <li><a href="#top">Sobre a DOTPET</a></li>
+            <li><a href="#">Nosso intuito</a></li>
+        </div>
+
+        <div class="contact-box">
+            <h4>NOSSAS POLÍTICAS</h4>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de contrato</a></li>
+        </div>
+
+        <div class="contact-box">
+            <h4>ATENDIMENTO DOTPET</h4>
+            <li><a href="#">Fale conosco</a></li>
+            <li><a href="#">Ouvidoria: 55+ 11xxxx-xxxx</a></li>
+            <li><a href="#">Email: dotpet@xxxx.com</a></li>
+        </div>
+
+        <div class="contact-box">
+            <h4>BAIXE NOSSO APP</h4>
+            <a href="#" class="app">
+                <img src="img/qr.jpg">
+        </div>
+
+        <div class="contact-box">
+            <h4>DOTPET</h4>
+            <h5>Nossas redes sociais:</h5>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!---scroll--->
+    <a href="#" class="scroll-top"><i class='bx bx-chevrons-up'></i></a>
+
+    <div class="end-text">
+        <a href="/Home/Home.html">SAIR -</a>
+
+        <a href="/Perfil-ADM/perfil-adm.html">MEU PERFIL</a>
+    </div>
+
+
+
+   
+
+
+</body>
+
+</html>
